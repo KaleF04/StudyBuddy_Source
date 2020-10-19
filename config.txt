@@ -1,0 +1,4 @@
+[DEFAULT]
+multiplier = 0.6
+zoom = 1.0
+
