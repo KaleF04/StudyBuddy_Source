@@ -74,9 +74,6 @@ class Main_Menu(QWidget):
         self.about_btn = PicButton(QPixmap('contents/About.png'),self)
         self.about_btn.move(375,465)
 
-        self.donate_btn = PicButton(QPixmap('contents/Donate.png'),self)
-        self.donate_btn.move(25,465)
-
     def paintEvent(self,event):
         painter = QPainter(self)
         painter.setPen(QPen(Qt.black, 2, Qt.SolidLine))
@@ -914,8 +911,6 @@ class MainWindow(QMainWindow):
         self.Main_Menu.choose_temp_btn.clicked.connect(self.start_Choose_Temp_GUI)
         self.Main_Menu.make_temp_btn.clicked.connect(self.start_Make_Temp_GUI)
         self.Main_Menu.about_btn.clicked.connect(self.start_About_Temp_GUI)
-
-        self.Main_Menu.donate_btn.clicked.connect(lambda:webbrowser.open('https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=94JBF6ZVZXZMG&source=url'))
         
         self.show()
 
